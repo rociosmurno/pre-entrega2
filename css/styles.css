@@ -293,18 +293,5 @@ text-align: left;}
 
 
 .nav-link{
-    color: #ffffff;
-    
-}
-
-a:link{
-    color: #ffffff;
-}
-
-a:visited{
-    color: #f49336;
-}
-
-a:hover{
-    color: #ffffff;
+    color: #ffffff; 
 }
