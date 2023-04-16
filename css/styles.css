@@ -295,3 +295,7 @@ text-align: left;}
 .nav-link{
     color: #ffffff; 
 }
+
+nav:hover{
+    color: #f49336;
+}
