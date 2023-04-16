@@ -57,7 +57,7 @@ a{
     font-family: 'Ubuntu', sans-serif;
 }
 
-header nav ul li{
+/*header nav ul li{
     color:rgb(235, 220, 202);
     text-decoration: none;
     margin-left: 40px;
@@ -66,10 +66,16 @@ header nav ul li{
     display: inline-block;
     padding-bottom: 10px;
     font-family: 'Ubuntu', sans-serif;
-}
+}*/
 
 
 /*estilos del main*/
+
+main div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 main{
     height: 70vh;
@@ -78,6 +84,10 @@ main{
     grid-template-rows: repeat(3, 33%);
     gap: 1rem;
     margin: 1rem 3rem 3rem 3rem;
+}
+
+main .img-dos, .img-cinco{
+    display: none;
 }
 
 main h2{
@@ -137,59 +147,6 @@ main span ul li{
 
 .btn{
     margin-left: 10px;
-}
-
-main div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-main .img-dos, .img-cinco{
-    display: none;
-}
- /*mq de tablet */
-
-@media screen and (min-width:600px){
-    /*estilos de main*/
-    main{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 50%);
-    }
-
-    .img-uno, .img-tres{
-        grid-row: span 1;
-    }
-
-    .img-cuatro{
-        grid-column: span 2;
-    }
-}
-
-/*mq pantallas desktop*/
-
-@media screen and (min-width:1024px){
-    main .img-dos, .img-cinco{
-        display: block;
-    }
-
-    main{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 40% 40% 20%;
-    }
-
-    .img-uno, .img-tres{
-        grid-row: span 2;
-    }
-
-    .img-dos, .img-cuatro{
-        grid-column: span 1;
-    }
-
-    .img-cinco{
-        grid-column: span 3;
-    }
-
 }
 
 /*.cajaShow{
@@ -376,3 +333,48 @@ footer nav ul li{
     margin-bottom: 50px;
     margin-left: 100px;
 text-align: left;}
+
+
+ /*mq de tablet */
+
+ @media screen and (min-width:600px){
+    /*estilos de main*/
+    main{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50%);
+    }
+
+    .img-uno, .img-tres{
+        grid-row: span 1;
+    }
+
+    .img-cuatro{
+        grid-column: span 2;
+    }
+}
+
+/*mq pantallas desktop*/
+
+@media screen and (min-width:1024px){
+    main .img-dos, .img-cinco{
+        display: block;
+    }
+
+    main{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 40% 40% 20%;
+    }
+
+    .img-uno, .img-tres{
+        grid-row: span 2;
+    }
+
+    .img-dos, .img-cuatro{
+        grid-column: span 1;
+    }
+
+    .img-cinco{
+        grid-column: span 3;
+    }
+
+}
