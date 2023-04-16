@@ -315,14 +315,11 @@ footer nav ul li{
     margin-top: 30px;
     margin-bottom: 50px;
     margin-left: 100px;
-text-align: left;}
+    text-align: left;
+}
 
 
 
 .nav-link{
     color: #ffffff; 
-}
-
-a:hover{
-    color: #f49336;
 }
