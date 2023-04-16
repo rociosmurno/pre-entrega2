@@ -16,6 +16,14 @@ header{
     background-color: #000000;
 }
 
+.nav-link{
+    color: #ffffff; 
+}
+
+a:hover{
+    color: #f49336;
+}
+
 h1{
     text-align: left;
     color: #f49336;
@@ -101,6 +109,11 @@ main span iframe{
 main span ul li{
     color: #000000;
 
+}
+
+.form-label{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .cajaShow{
