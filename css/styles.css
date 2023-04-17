@@ -47,6 +47,11 @@ h1{
 a{
     color: #ffffff;
     text-decoration: none;
+    
+}
+
+a:hover{
+    color: #f49336;
 }
 
 .ahome{
